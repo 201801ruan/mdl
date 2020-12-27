@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>刘军286_单页响应式网页</title>
+    <link rel="Shortcut icon" href="lj_images/favicon.ico">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <style>
+        .myNav {
+            background-image: url("lj_images/logo.png");
+            background-repeat: no-repeat;
+            background-size: 86px 30px;
+            background-position: right;
+            background-color: #101010;
+        }
+
+        .hui {
+            color: #9d9d9d;
+        }
+
+        .item.active {
+            width: 100%;
+        }
+        .myInputBox{
+            padding: 10px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .myInput{
+            border-bottom: #9d9d9d 1px solid;
+            margin-bottom: 10px;
+        }
+
+        .input-group-addon.myButton1{
+            color: cornflowerblue;
+            background: none;
+            border-right: none;
+        }
+        .input-group-addon.myButton2{
+            background-color: orangered;
+            color: white;
+        }
+        input.form-control{
+            border-left: none;
+        }
+    </style>
+</head>
+<body>
+<div class="myNav">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a href="#" class="hui"><span
+                class="glyphicon glyphicon-edit hui"></span>&nbsp;在线文本编辑</a></li>
+        <li role="presentation"><a href="#" class="hui"><&#8260;>&nbsp;在线代码</a></li>
+        <li role="presentation"><a href="#" class="hui"><span class="glyphicon glyphicon-hourglass hui"></span>&nbsp;文本比较</a>
+        </li>
+        <li role="presentation"><a href="#" class="hui"><span class="glyphicon glyphicon-floppy-save hui"></span>&nbsp;JQuery下载</a>
+        </li>
+        <li role="presentation"><a href="#" class="hui"><span class="glyphicon glyphicon-cloud hui"></span>&nbsp;前端库</a>
+        </li>
+        <li role="presentation"><a href="#" class="hui"><span class="glyphicon glyphicon-book hui"></span>&nbsp;在线手册</a>
+        </li>
+        <li role="presentation" class="active"><a href="#" class="hui">
+            <span class="glyphicon glyphicon-user hui"></span>&nbsp;个人中心</a>
+        </li>
+    </ul>
+</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="lj_images/r1.jpg" alt="...">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+        <div class="item">
+            <img src="lj_images/r2.jpg" alt="...">
+            <div class="carousel-caption">
+
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="myInput">
+    <div class="myInputBox">
+        <div class="input-group input-group-lg">
+            <span class="input-group-addon glyphicon glyphicon-search myButton1" id="sizing-addon1"></span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+            <span class="input-group-addon glyphicon glyphicon-circle-arrow-right myButton2">&nbsp;找寻你的梦想</span>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-sm-6 col-md-2"></div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi1.png" alt="">
+            <div class="caption">
+                <h3>Amaze UI后台管理模板</h3>
+                <p>Amaze UI后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi2.png" alt="">
+            <div class="caption">
+                <h3>Amaze UI后台深色系</h3>
+                <p>Amaze UI后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi3.png" alt="">
+            <div class="caption">
+                <h3>扁平化风格响应式后台</h3>
+                <p>基于bootstrap后台管理界面</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi4.jpg" alt="">
+            <div class="caption">
+                <h3>Jquery bootstrap响应式</h3>
+                <p>bootstrap响应式多用途后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2"></div>
+</div>
+<div class="row">
+    <div class="col-sm-6 col-md-2"></div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi5.png" alt="">
+            <div class="caption">
+                <h3>仿云后台管理界面模板</h3>
+                <p>仿云后台管理界面模板html源码</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi6.jpg" alt="">
+            <div class="caption">
+                <h3>响应式黑色主题后台</h3>
+                <p>JQuery bootstrap响应式黑色后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi7.png" alt="">
+            <div class="caption">
+                <h3>MAC风格响应式</h3>
+                <p>基于bootstrsp的HTML的后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <div class="thumbnail">
+            <img src="lj_images/yangshi8.png" alt="">
+            <div class="caption">
+                <h3>bootstrap_admin后台</h3>
+                <p>JQuery bootstrap响应式后台管理模板</p>
+                <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-list"></span>&nbsp;布局</a>
+                    <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link"></span>&nbsp;源代码</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-1 col-md-5"></div>
+    <div class="col-sm-1 col-md-1 btn btn-primary" style="padding-right: 10px;"><span class="glyphicon glyphicon-arrow-left"></span></div>
+    <div class="col-sm-1 col-md-1 btn btn-primary" style="padding-left: 10px;"><span class="glyphicon glyphicon-arrow-right"></span></div>
+    <div class="col-sm-1 col-md-5"></div>
+</div>
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('.item img').width(function () {
+        return window.innerWidth;
+    });
+</script>
+</body>
+</html>

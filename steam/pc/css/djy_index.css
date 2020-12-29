@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*��¼*/
+#login-link{
+    display: inline-block;
+    margin-left: 110px;
+}
+.shadow {
+    background: rgb(58, 58, 58);
+    filter: alpha(opacity=70); /* IE��͸���� */
+    opacity: 0.7; /* ͸���� */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* �˴���ͼ��Ҫ����ҳ�� */
+}
+
+#minaAttract .comp-html{
+    width:1200px;
+    margin:0 auto;
+
+}
+.wrapper{
+    margin-top: 115px;
+    margin-left: 110px;
+}
+.root1200{ width:100%; height:100px; margin:0 auto; overflow:visible}
+.wrapper em{ width:13px; height:15px; float:left; color:#FFF; font-size:12px;
+    background:#333;
+    padding:2px 5px 2px 10px; z-index:999; position:absolute; top:115px;
+    margin-left: 960px;
+}
+.login-box {
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    z-index: 99999;  /* �˴���ͼ��Ҫ��������ͼ�� */
+}
+.loging{
+    color: rgb(20, 20, 20);
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    height:40px;
+    margin-top: 15px;
+}
+#close-butn{
+    position: absolute;
+    width:15px;
+    height: 15px;
+    line-height: 13px;
+    text-align: center;
+    color:rgb(43, 42, 42);
+    top: 25px;
+    right: 29px;
+}
+#username{
+    margin: 0 auto;
+    margin-top: 37px;
+    width: 57%;
+    height:40px;
+    border: none;
+    background-color: rgba(214, 211, 206,0.7);
+    border-radius: 8px;
+    text-align: center;
+}
+#password{
+    margin: 0 auto;
+    margin-top: 37px;
+    width: 57%;
+    height:40px;
+    border: none;
+    background-color: rgba(214, 211, 206,0.7);
+    border-radius: 8px;
+    text-align: center;
+}
+.blog{
+    margin-left: 50px;
+    margin-top: 37px;
+    width: 57%;
+    height:40px;
+    border: none;
+    background-color: rgba(187, 12, 12, 0.7);
+    border-radius: 8px;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 10px 0;
+}
+.header_content{
+    width:100%;
+    height: 60px;
+}
+.logo{
+    width: 130px;
+    float: left;
+    height: 40px;
+    margin-left: 235px;
+    margin-top: 5px;
+}
+.logo img{
+    width: 80%;
+}
+.styled {
+    display: inline-flex;
+    margin-top: 10px;
+    position: relative;
+}
+.input{
+    width: 370px;
+    height: 30px;
+    float: left;
+    display: flex;
+    margin-top: 13px;
+    padding: 0 16px;
+}
+.text{
+    border: 2px solid #ff4200;
+    width: 300px;
+}
+.submit{
+    width: 60px;
+    height: 30px;
+    border: 0 solid #ff4200;
+    top: 0;
+    right: 0;
+    background-color: #ff4200;
+    color: #fff;
+}
+.deng{
+    margin-left: 32px;
+    margin-top: 10px;
+    line-height: 1.4;
+    position: relative;
+    cursor: pointer;
+}
+.deng a:hover{
+    color: rgb(132, 191, 84);;
+    transition: 1s;
+}
+.nav{
+    display: flex;
+    float: left;
+    margin-left:10px;
+    width: 600px;
+    height: 60px;
+
+}
+.nav_items{
+    float: left;
+    position: relative;
+    font-size: 12px;
+    line-height: 5.4;
+    padding: 14px 8px;
+    cursor: pointer;
+
+}
+.nav a:hover{
+    color:red;
+    transition: 1s;
+}
+/*ѡ�*/
+.wrapp{
+    display: flex;
+    height: auto;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 140px;
+    margin-left: 100px;
+}
+.wrapp.tabbox{
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    text-align: center;
+    line-height: 300px;
+    background: rgba(253, 250, 253, 0.6);
+    transition: all 1s;
+}
+.tab_menu{
+    border:0 solid #d9d9d9;
+    width: 470px;
+    height: 30px;
+    background-color: rgb(255 0 0);
+    border-bottom:3px solid rgb(10, 10, 10);
+    overflow:hidden;
+}
+.tab_menu li{
+    width:100px;
+    float:left;
+    height:30px;
+    line-height:30px;
+    background: rgb(255 0 0);
+    text-align:center;
+    cursor:pointer;
+}
+.tab_menu li.current{
+    color:red;
+    border-top: 2px solid black;
+    background:#fff;
+}
+.tab_menu li a{
+    color:#fff;
+    text-decoration:none;
+}
+.tab_menu li.current a{
+    color:black;
+}
+.tab_box{
+    height:170px;
+    background: #faf5f5;
+}
+.tab_box li{
+    width:200px;
+    height:250px;
+    line-height:24px;
+    float: left;
+    overflow:hidden;
+    margin-left: 30px;
+}
+.tab_box li span{
+    margin:0 5px 0 0;
+    font-family:"����";
+    font-size:12px;
+    font-weight:400;
+    color:#ddd;
+}
+.tab_box .hide{
+    display:none;
+}
+.tab_box li img{
+    width: 100px;
+    height: 100px;
+}
+.tab_box li p{
+    font-size: 11px;
+}
+.tab_box li p+p{
+    color: red;
+}
+/*����*/
+.gonggao{
+    width: 230px;
+    margin-left:730px;
+    margin-top: -424px;
+    height: 202px;
+    background-color: #faf5f5;
+    border:1px solid #faf5f5;
+}
+.gonggao ul li {
+    width: 230px;
+    height: 18px;
+    font-size: 0.6rem;
+    color: rgb(38, 38, 38);
+    margin-bottom: 16px;
+    display: flex;
+}
+.gonggao ul li a{
+    margin-left: 20px;
+}
+.gonggao ul li a:hover{
+    color:red;
+}
+.guanfang_title p {
+    width: 230px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: red;
+    color: rgb(38, 38, 38);
+    text-align: center;
+}
+
+/*�ײ�*/
+.footer{
+    width: 100%;
+    background: #262626;
+    height: 230px;
+    line-height: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}.footer_list{
+     width: 100%;
+     font-size: 1rem;
+     line-height: 1;
+     margin-left: 100px;
+     color: rgba(255,255,255,.5);
+ }
+.footer_list ul{
+    width: 270px;
+    height: 200px;
+    float: left;
+}
+.footer_list ul li {
+    width:270px;
+    height: 42px;
+    color: white;
+    margin: 20px 0 0 0;
+}
+.footer_list ul li:first-child{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 600;
+}
+.footer_name{
+    height: 20px;
+    text-align: center;
+    position: relative;
+}
+.footer_footer{
+    width: 100%;
+    height:50px;
+    background-color: rgb(244, 248, 250);
+}
+#hed{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(119, 118, 118);
+    line-height:30px;
+}
+.feet{
+    width:100%;
+    height:40px;
+}
+.feet>span{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(112, 111, 111);
+    line-height:20px;
+    margin-left:460px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/mxq_registerMobile.css">
+    <script type="text/javascript">
+		//用户名校验
+			function checkName(){
+				var reg=/^[a-zA-Z][a-zA-Z0-9_]{5,17}$/;
+				return check("username",reg);}
+		//密码校验
+			function checkPwd(){
+				var reg=/^[0-9a-zA-Z]{6,16}$/;
+				return check("pwd",reg);}
+		//确认密码
+			function checkPwds(){
+				var pwd=document.getElementById("pwd").value;
+				var pwds=document.getElementById("pwds").value;
+				var span=document.getElementById("pwds_span");
+				if(pwds==pwd){
+					span.innerText="√";
+					span.style.color="green";}
+				else{
+					span.innerText="×密码输入错误";
+					span.style.color="red";
+				}
+			}
+		//手机号校验
+			function checkPhone(){
+				var reg=/^[1]\d{10}$/;
+				return check("phone",reg);}
+		//邮箱校验
+			function checkEmail(){
+				var reg=/[1-9]\d{5,10}@qq.com$/;
+				return check("email",reg);}
+			
+		//公共的方法
+			function check(id,reg){
+				//获得输入的值
+				var uname=document.getElementById(id);
+				var value=uname.value;
+				var alt=uname.alt;
+				//获得span对象
+				var span=document.getElementById(id+"_span");
+				if(value==null||value==""){
+					span.innerText="×"+alt+"不能为空";
+					span.style.color="red";
+				     return false;}
+				else if(reg.test(value)){
+					span.innerText="√";
+					span.style.color="green";
+				    return true ;}
+					else{
+					span.innerText="×不合法";
+					span.style.color="red";
+				     return false ;}  }
+		
+				
+			function submt(){
+			  var  flag=checkName()&&checkPwd()&&checkPhone()&&checkEmail();
+		     return flag;		
+                }	
+                
+                function register(){  
+                var flag =flag=checkName()&&checkPwd()&&checkPhone()&&checkEmail();
+    if(flag){
+        alert("注册成功，欢迎进入登录页面！");
+    }
+    else{
+        alert("注册失败，请输入完整信息！");
+    }                              
+            }
+		
+		</script>
+</head>
+<body>
+    <div class="container">
+        <div class="head"></div>
+        <div class="register-page">
+			<h1	>用户注册</h1>
+		    <form action="index.html" method="POST" onsubmit="return submt()">
+			<table >
+				<tr height="45px" >
+					
+					<td width="300px" >
+						<input type="text" name="username" id="username" alt="用户名" 
+							placeholder="用户名" onblur="checkName()"   / >
+						<span   id="username_span"></span>
+					</td>
+				</tr >
+				<tr height="45px">
+					
+					<td>
+						<input type="password" alt="密码" id="pwd" onblur="checkPwd()"
+							placeholder="输入6位数密码"/>
+						<span id="pwd_span" ></span>
+					</td>
+				</tr>
+				<tr height="45px">
+					
+					<td>
+						<input type="password" alt="密码" id="pwds" onblur="checkPwds()"
+							placeholder="确认密码"/>
+						<span id="pwds_span" ></span>
+					</td>
+				</tr>
+				<tr height="45px">
+				
+					<td><input type="text" id="phone" placeholder="手机号" 
+						  onblur="checkPhone()" alt="手机号" />
+					<span id="phone_span"></span>
+					</td>
+				</tr>
+				<tr height="45px">
+				
+					<td>
+						<input type="email"  id="email" placeholder="QQ邮箱" onblur="checkEmail()" />
+						<span id="email_span"></span>
+					</td>
+				</tr>
+				<tr height="45px">
+					<td >
+						<select name="" style="width: 222px;"> 
+							<option value="0">--请选择籍贯--</option>
+							<option value="1">山西省</option>
+							<option value="2">陕西省</option>
+							<option value="3">河南省</option>
+							<option value="4">云南省</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<input  onclick="register()" type="submit" id="sub" value="注册" Readonly="true"/>
+		    </form>
+		</div>
+	</div>
+</body>
+</html>

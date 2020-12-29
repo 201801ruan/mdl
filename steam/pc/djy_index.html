@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>201858304268代俊英</title>
+    <link href="css/djy_index.css" rel="stylesheet" type="text/css">
+    <link href="css/djy_lunbo.css" rel="stylesheet" type="text/css">
+<link href="css/djy_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/djy_home.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/djy_daojishi.js"></script>
+</head>
+<body>
+<div class="app">
+    <div class="wrapper" id="snActive-wrap">
+        <em title="关闭广告">X</em>
+        <a target="_blank" name="redbaby_none_ggw_dt01" href="#"></a>
+    </div>
+    <div style="display: none" class="shadow" id="shadow"></div>
+    <div class="header">
+        <div class="header_content">
+            <div class="logo"><img src="djy_images/taobao.JPG" alt=""></div>
+            <form class="input">
+                <input type="text"  class="text" placeholder="搜索你感兴趣的内容" value="">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+            <div id="login-link">登录</div>
+            <ul class="styled">
+                <li class="deng"><a href="mxq_register.html">注册</a> </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav_items"><a href="#"> 秒杀 </a></li>
+                <li class="nav_items"><a href="#"> 优惠券 </a></li>
+                <li class="nav_items"><a href="#"> 品牌闪购</a></li>
+                <li class="nav_items"><a href="#"> 拍卖</a></li>
+                <li class="nav_items"><a href="#"> 聚划算</a></li>
+                <li class="nav_items"><a href="#"> 淘抢购</a></li>
+                <li class="nav_items"><a href="#"> 电器城</a></li>
+                <li class="nav_items"><a href="#"> 主题市场</a></li>
+                <li class="nav_items"><a href="#"> 淘宝心选</a></li>
+                <li class="nav_items"><a href="mxq_sort.html" style="color: red; font-weight: bold;">商品列表</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 登录-->
+    <div style="display: none" id="login-box" class="login-box">
+        <div class="loging">账号登录</div>
+        <button id="close-butn">X</button>
+        <form>
+            <div class="input-item">
+                <label for="username">用户名:&nbsp;</label>
+                <input type="text"  id="username" placeholder="用户名/邮箱/手机号码">
+            </div>
+            <div class="input-item">
+                <label for="password">密　码:&nbsp;</label>
+                <input type="password"  id="password" placeholder="密码">
+            </div>
+            <div class="input-item">
+                <button class="blog" type="submit" onclick="loging()">登　录</button>
+            </div>
+        </form>
+    </div>
+    <!-- 轮播-->
+    <div id="big_banner_wrap">
+        <ul id="banner_menu_wrap">
+            <li class="active">
+                <a>手机&nbsp;平板</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -20px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/minote.jpg"></a><a>大米NOTE</a><span>选购</span></li>
+                        <li>
+                            <a><img src="djy_images/mi4.jpg"></a><a>大米手机4</a><span>选购</span></li>
+                        <li>
+                            <a><img src="djy_images/hongmi2.jpg"></a><a>红米手机2</a><span>选购</span></li>
+                        <li>
+                            <a><img src="djy_images/hongmi2a.jpg"></a><a>红米手机2A</a><span>选购</span></li>
+                        <li>
+                            <a><img src="djy_images/note2.jpg"></a><a>红米NOTE2</a><span>选购</span></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>
+                <a>电视&nbsp;盒子</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -62px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/tv40.jpg"></a><a>大米电视40英寸</a></li>
+                        <li>
+                            <a><img src="djy_images/tv48.jpg"></a><a>大米电视48英寸</a></li>
+                        <li>
+                            <a><img src="djy_images/tv49.jpg"></a><a>大米电视49英寸</a></li>
+                        <li>
+                            <a><img src="djy_images/hezis.jpg"></a><a>大米电视55英寸</a></li>
+                        <li>
+                            <a><img src="djy_images/hezis.jpg"></a><a>大米盒子</a></li>
+                    </ul>
+
+                </div>
+            </li>
+            <li>
+                <a>路由器&nbsp;智能配件</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -104px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/miwifi.jpg"></a><a>大米路由器</a></li>
+                        <li>
+                            <a><img src="djy_images/miwifilite.jpg"></a><a>大米路由器&nbsp;青春版</a></li>
+                        <li>
+                            <a><img src="djy_images/air.jpg"></a><a>净化器</a></li>
+                        <li>
+                            <a><img src="djy_images/xiaoyi.jpg"></a><a>摄像机</a></li>
+                        <li>
+                            <a><img src="djy_images/scale.jpg"></a><a>体重称</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a>移动电源&nbsp;插线板</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -146px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/dianyuan.jpg "></a><a>大米移动电源</a></li>
+                        <li>
+                            <a><img src="djy_images/powerscript.jpg"></a><a>大米插线板</a></li>
+                        <li>
+                            <a><img src="djy_images/yidongdianyuan.jpg"></a><a>品牌移动电源</a></li>
+                        <li>
+                            <a><img src="djy_images/dianyuanfujian.jpg"></a><a>移动电源附件</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a>耳机&nbsp;音箱</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -188px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/headphone.jpg"></a><a>大米头戴式耳机</a></li>
+                        <li>
+                            <a><img src="djy_images/huosai.jpg"></a><a>大米活塞耳机</a></li>
+                        <li>
+                            <a><img src="djy_images/bluetoothheadset.jpg"></a><a>大米蓝牙耳机</a></li>
+                        <li>
+                            <a><img src="djy_images/erji.jpg"></a><a>品牌耳机</a></li>
+                        <li>
+                            <a><img src="djy_images/yinxiang.jpg"></a><a>音箱</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a>电池&nbsp;存储卡</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -230px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/dianchi.jpg"></a><a>电池</a></li>
+                        <li>
+                            <a><img src="djy_images/chongdian.jpg"></a><a>充电器</a></li>
+                        <li>
+                            <a><img src="djy_images/xiancai.jpg"></a><a>线材</a></li>
+                        <li>
+                            <a><img src="djy_images/cunchu.jpg"></a><a>存储卡</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a>保护套&nbsp;后盖</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -272px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/baohu.jpg"></a><a>保护套/保护壳</a></li>
+                        <li>
+                            <a><img src="djy_images/huosai.jpg"></a><a>后盖</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a>贴膜&nbsp;其它配件</a>
+                <a class="banner_menu_i">&gt;</a>
+                <div class="banner_menu_content" style="width: 300px; top: -314px;">
+                    <ul class="banner_menu_content_ul">
+                        <li>
+                            <a><img src="djy_images/tiemo.jpg"></a><a>贴膜</a></li>
+                        <li>
+                            <a><img src="djy_images/zipaigan.jpg"></a><a>自拍杆</a></li>
+                        <li>
+                            <a><img src="djy_images/tizhi.jpg"></a><a>贴纸</a></li>
+                        <li>
+                            <a><img src="djy_images/fangchensai.jpg"></a><a>手机支架</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div id="big_banner_pic_wrap">
+            <ul id="big_banner_pic">
+                <li><img src="djy_images/1.jpg"></li>
+                <li><img src="djy_images/2.jpg"></li>
+                <li><img src="djy_images/3.jpg"></li>
+                <li><img src="djy_images/4.png"></li>
+                <li><img src="djy_images/5.jpg"></li>
+            </ul>
+        </div>
+        <div id="big_banner_change_wrap">
+            <div id="big_banner_change_prev"> &lt;</div>
+            <div id="big_banner_change_next">&gt;</div>
+        </div>
+    </div>
+    <div class="aui-content-max">
+        <div class="aui-sale-time">
+            <a href="javascript:" class="aui-sale-time-link">
+                <div class="aui-sale-title">限时秒杀</div>
+                <div class="aui-sale-second">FLASH DEALS</div>
+                <div class="aui-sale-ends">本场距离结束还剩</div>
+                <div class="aui-sale-count">
+                    <div class="aui-sale-count-item">
+                        <span id="hour_show">00时</span>
+                    </div>
+                    <div class="aui-sale-count-item">
+                        <span id="minute_show">00分</span>
+                    </div>
+                    <div class="aui-sale-count-item">
+                        <span id="second_show">00秒</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="aui-content-box">
+            <div class="prev">
+                <a href="javascript:void(0)">
+                    <img src="djy_images/prev.png" alt="">
+                </a>
+            </div>
+            <div class="aui-content-box-ovf">
+                <div class="aui-content-box-list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd1.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">OPPO Reno3 Pro 双模5G 视频双防抖 90HZ高感曲面屏 7.7mm轻薄机身 8GB+128GB 日出印象 </p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>3699.00</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>4000.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd2.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">蔚县小米黄小米香糯粘稠2020新米蔚州贡米石磨米脂油月子小米5斤</p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>45.50</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>50.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd5.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">啄.木鸟轻奢新品格子衬衫青少年宽松慵懒风时尚加厚粗毛呢衬衣外套男女潮 黑格子 S肖战同款</p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>348.00</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>355.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd3.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">杞年 2020新货宁夏枸纪小枸杞子中宁特产枸杞250g红构杞拘杞茶 </p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>17.90</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>20.90</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd4.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">雅诗兰黛（Estee Lauder）口红倾慕唇膏333干枫叶红</p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>255.00</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>270.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd6.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">百威啤酒国产百威经典醇正黄啤啤275ml*24瓶整箱装</p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>128.00</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>129.90</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd7.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">CONVERSE匡威官方 Run Star Hike 男女鞋高帮牛皮革潮流厚底休闲鞋 169241C </p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>369.00</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>1000.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd8.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">冬之旅 万方剧本精选集 万方著 曹禺先生诞辰110周年特别行动 </p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>20.90</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>25.00</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="aui-content-item-img">
+                                    <img src="djy_images/pd9.jpg" alt="">
+                                </div>
+                                <p class="aui-content-item-name">民国情书老照片首度公开，揭秘一个你不知道的戏剧大师曹禺。一本做成了艺术品的书</p>
+                                <div class="aui-content-price">
+								<span class="aui-content-price-new">
+									<i>¥</i>
+									<span>60.90</span>
+								</span>
+								<span class="aui-content-price-origin">
+									<i>¥</i>
+									<span>65.90</span>
+								</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="next">
+                <a href="javascript:void(0)">
+                    <img src="djy_images/next.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 选项卡-->
+    <div class="wrapp">
+        <div class="tabbox demo1">
+            <ul class="tab_menu">
+                <li class="current">人气单品</li>
+                <li>七日畅销榜</li>
+                <li>新书热卖榜</li>
+            </ul>
+            <div class="tab_box">
+                <div>
+                    <ul>
+                        <li> <img src="djy_images/5.1.JPG" alt="">
+                            <p>霓虹蓝色狐狸刺绣卫衣</p>
+                            <p>￥218.50</p></li>
+
+                        <li><img src="djy_images/23.jpg" alt="">
+                            <p>黑枣 紫晶枣 果干蜜饯</p>
+                            <p>￥55.00</p></li>
+                    </ul>
+                </div>
+                <div class="hide">
+                    <ul>
+                        <li>
+                            <img src="djy_images/2.1.JPG" alt="">
+                            <p>超长战壕风衣男士</p>
+                            <p>￥672.80</p>
+                        </li>
+                        <li><img src="djy_images/2.2.png" alt="">
+                            <p> 雅诗兰黛花漾倾慕唇膏</p>
+                            <p>￥258.80</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hide">
+                    <ul>
+                        <li>
+                            <img src="djy_images/3.1.JPG" alt="">
+                            <p>创业如何在事与难中精进</p>
+                            <p>￥43.50</p>
+                        </li>
+                        <li><img src="djy_images/3.2.JPG" alt="">
+                            <p>东野圭吾 沉默的巡游</p>
+                            <p>￥59.0</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gonggao" >
+        <div class="guanfang_title"><p>公&nbsp;&nbsp;&nbsp;&nbsp;告</p></div>
+        <div class="gundong" style="overflow: hidden;  height: 400px;"
+             id="news-container">
+            <ul>
+                <li style="margin: 30px 0 0 0;  height: 38px; display: list-item;">
+                    <a href="#">价报双12</a> </li>
+                <li style="margin: 30px 0 0 0; height: 38px; display: list-item;">
+                    <a href="#">高品质男装</a> </li>
+                <li style="margin: 30px 0 0 0; height: 38px; display: list-item;">
+                    <a href="#">手机超低价</a> </li>
+                <li style="margin: 30px 0 0 0; height: 38px; display: list-item;">
+                    <a href="#">蒙牛真果粒</a> </li>
+                <li style="margin: 30px; height: 38px; display: list-item;">
+                    <a href="#">roseonly真爱玫瑰</a> </li>
+                <li style="margin:30px;  height: 38px; display: list-item;">
+                    <a href="#">雅思兰黛真爱香水</a> </li>
+                <li style="margin: 30px; height: 38px; display: list-item;">
+                    <a href="#">开小灶</a> </li>
+                <li style="margin: 30px;  height: 38px; display: list-item;">
+                    <a href="#">OPPO  Reno4 Pro</a> </li>
+                <li style="margin: 30px;  height: 38px; ">
+                    <a href="#">百威珀斯</a> </li>
+            </ul>
+        </div></div>
+    <div class="content">
+     <div class="cotent_title" style="width: 720px;height: 40px; background-color: red;font-size: 28px">
+         <p style="text-align: center;margin-top: 15px">为&nbsp;&nbsp;你&nbsp;&nbsp;推&nbsp;&nbsp;荐</p></div>
+     <div class="style">
+         <div class="style_one">
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/12.jpg" alt="" ></img>
+                         <span class="jiage" style="color: red;">￥378.00</span>
+                         <p class="xiangqing">BOY BEES潮牌FMK国潮牌情侣好彩条纹长袖落肩宽松t恤</p>
+                         <div class="box">点击查看更多</div>
+                     </a>
+                 </ul>
+             </div>
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/22.jpg" alt=""></img>
+                         <span class="jiage" style="color: red;">￥789.00</span>
+                         <p class="xiangqing">雅诗兰黛香水真爱淡香氛淡香水花香调 女士持久国内专柜 </p>
+                         <div class="box">点击查看更多</div>
+                     </a>
+                 </ul>
+             </div>
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/pd7.jpg" alt="" ></img>
+                         <span class="jiage" style="color: red;">￥369.00</span>
+                         <p class="xiangqing">时尚联名匡威女高帮厚底增高休闲鞋松糕运动鞋 </p>
+
+                         <div class="box">点击查看更多</div>
+                     </a>
+                 </ul>
+             </div>
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/watch.jpg" alt="" ></img>
+                         <span class="jiage" style="color: red;">￥80.90</span>
+                         <p class="xiangqing">山阳核桃家金琥珀芝麻海苔核桃仁坚果零食公益陕西特产 </p>
+                         <div class="box">点击查看更多</div>
+                     </a>
+                 </ul>
+             </div>
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/xianglian.jpg" alt="" ></img>
+                         <span class="jiage" style="color: red;">￥2580.00</span>
+                         <p class="xiangqing">项链锁吊坠挂锁毛衣链1005银色碎裂锁头饰品</p>
+                         <div class="box">点击查看更多</div>
+                     </a>
+                 </ul>
+             </div>
+             <div class="card">
+                 <ul class="kuai">
+                     <a href ="#">
+                         <img src="djy_images/pd8.jpg" alt="" ></img>
+                         <span class="jiage" style="color: red;">￥25.00</span>
+                         <p class="xiangqing">冬之旅 万方剧本精选集 万方著 曹禺先生诞辰110周年特别行动</p>
+
+                         <div class="box">点击查看滚动</div>
+                     </a>
+                 </ul>
+             </div>
+
+
+     </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="footer_list">
+            <ul >
+                <li>消费者保障</li>
+                <li>保障范围  退货汇款流程</li>
+                <li>服务中心 更多服务特色</li>
+            </ul>
+            <ul >
+                <li>新手上路</li>
+                <li>新手专区  消费提示  交易安全</li>
+                <li>24小时在线帮助 免费开店</li>
+
+            </ul>
+            <ul >
+                <li>付款方式</li>
+                <li>快捷支付  信用卡  余额宝</li>
+                <li>蚂蚁花呗 货到付款</li>
+
+            </ul>
+            <ul >
+                <li>淘宝特色</li>
+                <li>手机淘宝</li>
+                <li>大众评审</li>
+            </ul>
+        </div>
+        <!--<div class="footer_name">201858304268代俊英</div>-->
+    </div>
+    <div class="footer_footer">
+        <div class="feet">
+            <span>201858304268 代俊英</span>
+        </div>
+    </div>
+
+    <div id="topcontrol" style="position: fixed; bottom: 120px; right: 100px; cursor: pointer; display:none;" >
+        <img src="djy_images/top.png" width="40" height="40" />
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script src="js/djy_lunbo.js"></script>
+<script type="text/javascript" src="js/djy_ad.js"></script>
+<script src="js/djy_jquery.tabs.js"></script>
+<script type="text/javascript" src="js/djy_top.js"></script>
+<script type="text/javascript" src="js/djy_jquery.vticker-min.js"></script>
+<script type="text/javascript">
+    var intDiff = parseInt(600000);//倒计时总秒数量
+    function timer(intDiff){
+        window.setInterval(function(){
+            var day=0,
+                    hour=0,
+                    minute=0,
+                    second=0;//时间默认值
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+            $('#hour_show').html('<s id="h"></s>'+hour+'时');
+            $('#minute_show').html('<s></s>'+minute+'分');
+            $('#second_show').html('<s></s>'+second+'秒');
+            intDiff--;
+        }, 1000);
+    }
+    $(function(){
+        timer(intDiff);
+    });
+    //tab选项卡
+    $(function(){
+        $('.demo1').Tabs({
+            event:'click'
+        });
+    });
+    //一键回顶部
+    $(function(){
+        scrolltotop.offset(100,120);
+        scrolltotop.init();
+    });
+    //文字滚动
+    $(function(){
+        $('#news-container').vTicker({
+            speed: 150,
+            pause: 1500,
+            animation: 'fade',
+            mousePause: false,
+            showItems: 5
+        });
+    });
+//弹窗
+    $("#login-link").click(function () {
+        $("#login-box").show();
+        $("#shadow").show();
+            });
+    //关闭登录框，点击关闭按钮关闭
+    $("#close-butn").click(function () {
+        $("#login-box").hide();
+        $("#shadow").hide();
+    });
+    function loging(){
+        var user=document.getElementById("username").value;
+        var pwd=document.getElementById("password").value;
+        if(pwd!=null&&user!=null){
+            alert("登录成功，欢迎选购！");
+            window.location.href="#"
+        }else{
+            alert("登录失败，用户名或密码错误！");
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    /*
+     * 宽窄屏切换
+     * */
+    var bigscreen = false;
+    if ( screen.width>=1200 ) {
+        bigscreen = true;
+        var bodyTag = document.getElementsByTagName("body")[0],
+                bodyClassName = bodyTag.getAttribute("className") || bodyTag.getAttribute("class");
+        bodyClassName = bodyClassName ? bodyClassName+" " : "";
+        bodyTag.className = bodyClassName+"root1200";
+    }
+    ~function (){
+        var snActive = window.snActive = document.getElementById("snActive-wrap"),
+                a = snActive.getElementsByTagName("a"),
+                h = 0, w, imgSrc = [];
+        if (bigscreen){
+            w = 1190;
+            imgSrc[0] = "djy_images/1390124030537_1200.jpg";
+        } else {
+            w = 990;
+            imgSrc[0] = "djy_images/1390124028186.jpg";
+        }
+        snActive.style.overflow = 'hidden';
+        a[0].style.display = "none";
+        a[0].innerHTML += '<img width="' + w + '" height="40" src="' + imgSrc[0] + '" style="display:block" />';
+    }();
+    //关闭通栏广告
+    var snActive = $(snActive),
+            hideImg = snActive.find('a:hidden'),
+            em = snActive.find("em");
+    timeout = !1;
+    if(hideImg[0]) {
+        timeout = setTimeout(function(){
+            snActive.animate({height:40},0,function(){
+                hideImg.siblings('a:visible').hide();
+                hideImg.show();
+                em.show().live("click",function(){
+                    snActive.slideUp(0);
+                });
+            });
+        }, 0)
+    }
+</script>
+</body>
+</html>
